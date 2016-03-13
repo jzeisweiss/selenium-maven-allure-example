@@ -1,5 +1,4 @@
 # Build & Package Files
-*.jar
 *.war
 *.ear
 *.class
