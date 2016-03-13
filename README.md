@@ -4,13 +4,14 @@ Basic framework for a selenium-maven-allure combination.
 ### Project Setup
 
 ![Allure Report Overview](allure-tools/allure_report_overview.png?raw=true "Allure Report Overview")
+
 ![Allure Report Detail](allure-tools/allure_report_details.png?raw=true "Allure Report Detail")
 
-### Requirements
+### System Requirements
 1. Java 8
 2. Maven
 
-#### Eclipse
+### Eclipse
 1. Import as an existing Maven project.
 2. Install the TestNG Plugin.
 3. Optional: If you want to run tests from within Eclipse and want the annotation features to work then you need to add a java agent for AspectJ Weaver to your JVM so that it can watch for the annotations.
