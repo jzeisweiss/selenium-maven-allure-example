@@ -1,14 +1,11 @@
 # selenium-maven-allure-example
-Basic framework for a selenium-maven-allure combination.
 
-### Project Setup
-
-![Allure Report Overview](allure-tools/allure_report_overview.png?raw=true "Allure Report Overview")
+![Allure Report Demo](allure-tools/allure_demo.png?raw=true "Allure Report Demo")
 
 ![Allure Report Detail](allure-tools/allure_report_details.png?raw=true "Allure Report Detail")
 
 ### System Requirements
-1. Java 8
+1. Java 8 *This could technically be down graded to Java 7 but would require some adjustments*
 2. Maven
 
 ### Eclipse

@@ -9,15 +9,14 @@ hs_err_pid*
 # Eclipse Stuff
 .classpath
 .project
-.settings/*
-bin/*
+/.settings/
+/bin/
 
 # Report Stuff
-allure-report/*
+/allure-report/
 
 # Maven Stuff
-target/*
 /target/
 
 #TestNG Stuff
-test-output/*
+/test-output/
