@@ -17,8 +17,8 @@ public enum AllureCommand {
 	private static final String TOOL_PATH = "/usr/local/bin/allure";
 	private static final String RESULTS_DATA_PATH = "target/allure-results";
 	private static final String CONSOLE_HORIZONTAL_LINE = "----------------------------------------------------------------------------------";
-	private static final String MAKE_DIRECTORY = SystemUtils.IS_OS_MAC ? "mkdir " : "TODO: find pc command";
 	private static final String REMOVE_DIRECTORY = SystemUtils.IS_OS_MAC ? "rm -rf  " : "TODO: find pc command";
+	private static final String TESTNG_REPORT_PATH = "test-output";
 
 	AllureCommand(String command) {
 		this.command = TOOL_PATH + " " + command + " ";
@@ -28,20 +28,22 @@ public enum AllureCommand {
 		switch (this) {
 		case GENERATE:
 			executeCommandLine(command + RESULTS_DATA_PATH);
+			executeCommandLine(REMOVE_DIRECTORY + RESULTS_DATA_PATH);
+			executeCommandLine(REMOVE_DIRECTORY + TESTNG_REPORT_PATH);
 			break;
 		case OPEN:
 			executeCommandLine(command);
 			break;
 		case CLEAN:
 			executeCommandLine(command);
-			executeCommandLine(REMOVE_DIRECTORY + RESULTS_DATA_PATH);
-			executeCommandLine(MAKE_DIRECTORY + RESULTS_DATA_PATH);
 			break;
 		}
 	}
 
 	private void executeCommandLine(String command) {
-		try (Scanner output = new Scanner(Runtime.getRuntime().exec(command).getInputStream())) {
+		try (Scanner output = new Scanner(Runtime	.getRuntime()
+													.exec(command)
+													.getInputStream())) {
 			output.useDelimiter("\\A");
 			System.out.println(CONSOLE_HORIZONTAL_LINE);
 			System.out.println("Running Command: $ " + command);
