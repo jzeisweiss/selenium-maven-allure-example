@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1457829244243" stop="1457829245992" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Surefire suite : Surefire test</name>
+    <title>Surefire suite : Surefire test</title>
+    <test-cases>
+        <test-case start="1457829244520" stop="1457829245119" status="passed">
+            <name>testFullExample</name>
+            <steps>
+                <step start="1457829244548" stop="1457829244549" status="passed">
+                    <name>addStep[1, Produce amazing things]</name>
+                    <title>[#1] Produce amazing things</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1457829244552" stop="1457829245114" status="passed">
+                    <name>recordScreenshot[2, During Test example.]</name>
+                    <title>[#2] Record a screenshot | About: During Test example.</title>
+                    <attachments>
+                        <attachment title="Page screenshot" source="0621c65e-165b-4ea2-9de4-f80887a00351-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start="1457829245115" stop="1457829245115" status="passed">
+                    <name>addStep[3, Reord a text file]</name>
+                    <title>[#3] Reord a text file</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Jimmy's Full Examples"/>
+                <label name="feature" value="Jimmy's feature"/>
+                <label name="host" value="JZ-MBP.local"/>
+                <label name="thread" value="24602@JZ-MBP.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1457829245297" stop="1457829245464" status="passed">
+            <name>testScreenshotExample</name>
+            <steps>
+                <step start="1457829245120" stop="1457829245296" status="passed">
+                    <name>recordScreenshot[4, End of the test.]</name>
+                    <title>[#4] Record a screenshot | About: End of the test.</title>
+                    <attachments>
+                        <attachment title="Page screenshot" source="9fbc209b-e5d4-4aea-a6a1-88abeef001dd-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start="1457829245297" stop="1457829245464" status="passed">
+                    <name>recordScreenshot[1, During Test example.]</name>
+                    <title>[#1] Record a screenshot | About: During Test example.</title>
+                    <attachments>
+                        <attachment title="Page screenshot" source="2456275f-d5c2-4d57-8104-a1b53ce81931-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Jimmy's Individual Examples"/>
+                <label name="feature" value="Jimmy's feature"/>
+                <label name="host" value="JZ-MBP.local"/>
+                <label name="thread" value="24602@JZ-MBP.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1457829245651" stop="1457829245652" status="passed">
+            <name>testStepExample</name>
+            <steps>
+                <step start="1457829245465" stop="1457829245651" status="passed">
+                    <name>recordScreenshot[2, End of the test.]</name>
+                    <title>[#2] Record a screenshot | About: End of the test.</title>
+                    <attachments>
+                        <attachment title="Page screenshot" source="17799070-02a9-413d-a115-31a38e3e922a-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start="1457829245652" stop="1457829245652" status="passed">
+                    <name>addStep[1, Conquer the world]</name>
+                    <title>[#1] Conquer the world</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1457829245652" stop="1457829245652" status="passed">
+                    <name>addStep[2, Have fun]</name>
+                    <title>[#2] Have fun</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1457829245652" stop="1457829245652" status="passed">
+                    <name>addStep[3, Go Crazy]</name>
+                    <title>[#3] Go Crazy</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Jimmy's Individual Examples"/>
+                <label name="feature" value="Jimmy's feature"/>
+                <label name="host" value="JZ-MBP.local"/>
+                <label name="thread" value="24602@JZ-MBP.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1457829245813" stop="1457829245814" status="passed">
+            <name>testTextAttachmentExample</name>
+            <steps>
+                <step start="1457829245652" stop="1457829245813" status="passed">
+                    <name>recordScreenshot[4, End of the test.]</name>
+                    <title>[#4] Record a screenshot | About: End of the test.</title>
+                    <attachments>
+                        <attachment title="Page screenshot" source="01612e9a-d41d-4129-8176-548679b4026d-attachment.png" type="image/png"/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start="1457829245814" stop="1457829245814" status="passed">
+                    <name>addStep[1, Reord a text file]</name>
+                    <title>[#1] Reord a text file</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="story" value="Jimmy's Individual Examples"/>
+                <label name="feature" value="Jimmy's feature"/>
+                <label name="host" value="JZ-MBP.local"/>
+                <label name="thread" value="24602@JZ-MBP.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

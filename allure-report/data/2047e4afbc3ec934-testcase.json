@@ -1,0 +1,95 @@
+{
+  "uid" : "2047e4afbc3ec934",
+  "name" : "testScreenshotExample",
+  "title" : "Test screenshot example",
+  "time" : {
+    "start" : 1457829245297,
+    "stop" : 1457829245464,
+    "duration" : 167
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "4d10ef987765eb0f",
+    "name" : "Surefire suite : Surefire test",
+    "title" : "Surefire suite : Surefire test"
+  },
+  "steps" : [ {
+    "name" : "recordScreenshot[4, End of the test.]",
+    "title" : "[#4] Record a screenshot | About: End of the test.",
+    "time" : {
+      "start" : 1457829245120,
+      "stop" : 1457829245296,
+      "duration" : 176
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Page screenshot",
+      "source" : "9fbc209b-e5d4-4aea-a6a1-88abeef001dd-attachment.png",
+      "type" : "image/png",
+      "size" : 33546,
+      "uid" : "d4d285383c248ac5"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "recordScreenshot[1, During Test example.]",
+    "title" : "[#1] Record a screenshot | About: During Test example.",
+    "time" : {
+      "start" : 1457829245297,
+      "stop" : 1457829245464,
+      "duration" : 167
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Page screenshot",
+      "source" : "2456275f-d5c2-4d57-8104-a1b53ce81931-attachment.png",
+      "type" : "image/png",
+      "size" : 33546,
+      "uid" : "fb9722ccbfad8a1d"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "JZ-MBP.local"
+  }, {
+    "name" : "suite-name",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-title",
+    "value" : "Surefire suite : Surefire test"
+  }, {
+    "name" : "feature",
+    "value" : "Jimmy's feature"
+  }, {
+    "name" : "story",
+    "value" : "Jimmy's Individual Examples"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "thread",
+    "value" : "24602@JZ-MBP.local.main(1)"
+  } ],
+  "parameters" : [ ]
+}
