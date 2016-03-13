@@ -11,9 +11,14 @@ hs_err_pid*
 .classpath
 .project
 .settings/*
+bin/*
 
 # Report Stuff
 allure-report/*
 
 # Maven Stuff
 target/*
+/target/
+
+#TestNG Stuff
+test-output/*

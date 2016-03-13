@@ -5,25 +5,28 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.ashot.AShot;
 
-public class CoreWebDiver {
+/**
+ * A enhanced {@link FirefoxDriver} that includes methods for Allure.
+ * 
+ * @author Jimmy Zeisweiss
+ *
+ */
+public class CoreWebDiver extends FirefoxDriver {
 
-	private WebDriver driver;
 	private int stepCount;
 
-	public CoreWebDiver restStepCount() {
-		stepCount = 0;
-		return this;
-	}
-
-	private int increasedStepCount() {
-		return ++stepCount;
+	/**
+	 * A enhanced {@link FirefoxDriver} that includes methods for Allure.
+	 */
+	public CoreWebDiver() {
+		super();
+		this.get("http://www.google.com");
 	}
 
 	/**
@@ -34,6 +37,7 @@ public class CoreWebDiver {
 	 * 
 	 * @param description
 	 *            of the step
+	 * @return the current instance of {@link CoreWebDiver} for fluent calls
 	 */
 	@Step("[#{0}] {1}")
 	private CoreWebDiver addStep(int count, String description) {
@@ -42,26 +46,38 @@ public class CoreWebDiver {
 	}
 
 	/**
-	 * Add a step to your test case with a count.
+	 * Add a step to your test case with a count.The extra method call to
+	 * {@link #addStep(int, String)} is necessary to record the step number.
 	 * 
 	 * @param description
 	 *            of the step
+	 * @return the current instance of {@link CoreWebDiver} for fluent calls
 	 */
 	public CoreWebDiver addStep(String description) {
 		addStep(increasedStepCount(), description);
 		return this;
 	}
 
-	public CoreWebDiver killDriver() {
-		driver.quit();
-		return this;
+	/**
+	 * Get the increase step count.
+	 * 
+	 * @return the next step number
+	 */
+	private int increasedStepCount() {
+		return ++stepCount;
 	}
 
-	public CoreWebDiver recordDataFile(String about, String data) {
-		recordDataFile(increasedStepCount(), about, data);
-		return this;
-	}
-
+	/**
+	 * Record a data file in your report.
+	 * 
+	 * @param stepCount
+	 *            for the report
+	 * @param about
+	 *            the data
+	 * @param data
+	 *            to record
+	 * @return the data for the attachment
+	 */
 	@Attachment(value = "Text Attachment", type = "text/plain")
 	@Step("[#{0}] Record a data file | About: {1}")
 	private String recordDataFile(int stepCount, String about, String data) {
@@ -69,16 +85,19 @@ public class CoreWebDiver {
 	}
 
 	/**
-	 * Record a screenshot for the Allure report. This calls the private method
-	 * {@link #recordScreenshot(int)} so that it can log it as a step and have
-	 * the screenshot nested in the step. If you want to record a screenshot in
-	 * a TestNG configuration method you need to override the TestNG listener.
+	 * Record a data file in your report. This is an attachment and will respect
+	 * the formatting of the data. Use this for large data. The extra method
+	 * call to {@link #recordDataFile(int, String, String)} is necessary to
+	 * record the step number.
 	 * 
 	 * @param about
-	 *            the screenshot
+	 *            the data
+	 * @param data
+	 *            to record
+	 * @return the current instance of {@link CoreWebDiver} for fluent calls
 	 */
-	public CoreWebDiver recordScreenshot(String about) {
-		recordScreenshot(increasedStepCount(), about);
+	public CoreWebDiver recordDataFile(String about, String data) {
+		recordDataFile(increasedStepCount(), about, data);
 		return this;
 	}
 
@@ -98,16 +117,34 @@ public class CoreWebDiver {
 	public byte[] recordScreenshot(int stepCount, String about) {
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		try {
-			ImageIO.write(new AShot().takeScreenshot(driver).getImage(), "png", baos);
+			ImageIO.write(new AShot().takeScreenshot(this).getImage(), "png", baos);
 			return baos.toByteArray();
 		} catch (IOException e) {
 			throw new RuntimeException("Failed to record a screenshot");
 		}
 	}
 
-	public CoreWebDiver startDriver() {
-		driver = new FirefoxDriver();
-		driver.get("http://www.google.com");
+	/**
+	 * Record a screenshot for the Allure report. This calls the private method
+	 * {@link #recordScreenshot(int)} so that it can log it as a step and have
+	 * the screenshot nested in the step. If you want to record a screenshot in
+	 * a TestNG configuration method you need to override the TestNG listener.
+	 * 
+	 * @param about
+	 *            the screenshot
+	 */
+	public CoreWebDiver recordScreenshot(String about) {
+		recordScreenshot(increasedStepCount(), about);
+		return this;
+	}
+
+	/**
+	 * Reset the step count for the current iteration.
+	 * 
+	 * @return the current instance of {@link CoreWebDiver} for fluent calls
+	 */
+	public CoreWebDiver restStepCount() {
+		stepCount = 0;
 		return this;
 	}
 }
