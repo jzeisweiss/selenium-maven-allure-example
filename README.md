@@ -27,3 +27,11 @@ From command line: `$ mvn clean test`
 
 From Eclipse: Right click on the test .java file > Run As > TestNG Test
 
+### Library References
+
+| Library       | About |
+| ------------- | ------|
+| [Selenium](http://www.seleniumhq.org/)     | UI Browser Automation     |
+| [Allure](http://allure.qatools.ru/)        | Fancy Test Result Reports |
+| [TestNG](http://testng.org/doc/index.html) | Test Suite Management     |
+
