@@ -10,7 +10,7 @@
 ```java
 @Features("Jimmy's feature")
 public class ExampleTest {
-	@Stories("Jimmy's Full Examples")
+	@Stories("Jimmy's full example")
 	@Test(description = "Combine all examples.")
 	public void testFullExample() {
 		new CoreWebDiver().addStep("Produce amazing things")
