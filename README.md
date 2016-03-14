@@ -1,6 +1,6 @@
 # selenium-maven-allure-example
 
-![Allure Report Demo](allure-tools/allure_demo.png?raw=true "Allure Report Demo")
+![Allure Report Demo](allure-tools/allure_demo.gif?raw=true "Allure Report Demo")
 
 ![Allure Report Detail](allure-tools/allure_report_details.png?raw=true "Allure Report Detail")
 
