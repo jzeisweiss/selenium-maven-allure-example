@@ -8,11 +8,15 @@
 5. [Run The Demo Example](#run-the-demo-example)  
 6. [Library References](#library-references)  
 
+---
+
 ### Report Preview
 
 ![Allure Report Demo](allure-tools/allure_demo.gif?raw=true "Allure Report Demo")
 
 [Report screenshot](allure-tools/allure_report_details.png?raw=true)
+
+---
 
 ### Code Samples
 ```java
@@ -29,10 +33,14 @@ public class ExampleTest {
 ```
 [Full code sample.](src/test/java/com/bdh/automation/ExampleTest.java)
 
+---
+
 ### System Requirements
 1. Java 8 
 	- *This could technically be down graded to Java 7 but would require some adjustments*
 2. Maven
+
+---
 
 ### Eclipse Setup
 1. Import as an existing Maven project.
@@ -45,10 +53,13 @@ public class ExampleTest {
 	5. Click *Edit*
 	6. Add `-javaagent:allure-tools/aspectjweaver-1.8.3.jar` to your Default JVM arguments
 
-### Run The Demo Example
-From command line: `$ mvn clean test`
+---
 
-From Eclipse: Right click on the test .java file > Run As > TestNG Test
+### Run The Demo Example
+- From command line: `$ mvn clean test`
+- From Eclipse: Right click on the test .java file > Run As > TestNG Test
+
+---
 
 ### Library References
 
