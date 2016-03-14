@@ -76,3 +76,4 @@ public class ExampleTest {
 | [Selenium](http://www.seleniumhq.org/)     | UI Browser Automation     |
 | [Allure](http://allure.qatools.ru/)        | Fancy Test Result Reports |
 | [TestNG](http://testng.org/doc/index.html) | Test Suite Management     |
+
