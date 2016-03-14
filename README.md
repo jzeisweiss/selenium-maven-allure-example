@@ -13,10 +13,9 @@ public class ExampleTest {
 	@Stories("Jimmy's Full Examples")
 	@Test(description = "Combine all examples.")
 	public void testFullExample() {
-		CoreWebDiver driver = new CoreWebDiver();
-		driver.addStep("Produce amazing things")
-		      .recordScreenshot("During Test example.")
-		      .recordDataFile("During test data file", "{ More Data }");
+		new CoreWebDiver().addStep("Produce amazing things")
+		                  .recordScreenshot("During Test example.")
+		                  .recordDataFile("During test data file", "{ More Data }");
 	}
 }
 ```
