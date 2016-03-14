@@ -87,7 +87,7 @@ public enum AllureCommand {
 			}
 		});
 		try {
-			future.get(5, TimeUnit.SECONDS);
+			future.get(30, TimeUnit.SECONDS);
 		} catch (TimeoutException | InterruptedException | ExecutionException e) {
 			System.out.println("Timeout reached");
 		}
