@@ -1,11 +1,14 @@
 # selenium-maven-allure-example
 
+### Allure Report GIF
 ![Allure Report Demo](allure-tools/allure_demo.gif?raw=true "Allure Report Demo")
 
+### Allure Report Detail View Screenshot
 ![Allure Report Detail](allure-tools/allure_report_details.png?raw=true "Allure Report Detail")
 
 ### System Requirements
-1. Java 8 *This could technically be down graded to Java 7 but would require some adjustments*
+1. Java 8 
+	*This could technically be down graded to Java 7 but would require some adjustments*
 2. Maven
 
 ### Eclipse
