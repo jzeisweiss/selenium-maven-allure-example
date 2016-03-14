@@ -1,5 +1,7 @@
 package com.bdh.automation;
 
+import org.apache.commons.lang3.BooleanUtils;
+import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -24,6 +26,9 @@ public class ExampleTest {
 	 */
 	@BeforeSuite
 	public void beforeSuite() {
+		if (BooleanUtils.toBoolean(System.getProperty("SKIP_SELENIUM_TESTS", "false"))) {
+			throw new SkipException("Skip selenium tests.");
+		}
 		driver = new CoreWebDiver();
 		AllureCommand.REMOVE_OLD_REPORT.run();
 	}
