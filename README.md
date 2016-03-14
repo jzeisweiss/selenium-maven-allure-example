@@ -1,6 +1,7 @@
 # selenium-maven-allure-example 
 [![ReviewNinja](https://app.review.ninja/53761193/badge)](https://app.review.ninja/jzeisweiss/selenium-maven-allure-example)
 [![Build Status](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example.svg?branch=develop)](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example)
+[![Build Status](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example.svg?branch=master)](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example)
 
 ### Table of Contents  
 1. [Report Preview](#report-preview)  
@@ -76,3 +77,5 @@ public class ExampleTest {
 | [Selenium](http://www.seleniumhq.org/)     | UI Browser Automation     |
 | [Allure](http://allure.qatools.ru/)        | Fancy Test Result Reports |
 | [TestNG](http://testng.org/doc/index.html) | Test Suite Management     |
+
+
