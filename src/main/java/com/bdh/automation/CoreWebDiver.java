@@ -19,6 +19,9 @@ import ru.yandex.qatools.ashot.AShot;
  */
 public class CoreWebDiver extends FirefoxDriver {
 
+	/**
+	 * The current step count to print with each step message.
+	 */
 	private int stepCount;
 
 	/**
