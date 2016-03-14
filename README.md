@@ -77,3 +77,4 @@ public class ExampleTest {
 | [Allure](http://allure.qatools.ru/)        | Fancy Test Result Reports |
 | [TestNG](http://testng.org/doc/index.html) | Test Suite Management     |
 
+
