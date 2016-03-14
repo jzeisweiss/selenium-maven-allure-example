@@ -46,19 +46,25 @@ public class ExampleTest {
 1. Import as an existing Maven project.
 2. Install the TestNG Plugin.
 3. Optional: If you want to run tests from within Eclipse and want the annotation features to work then you need to add a java agent for AspectJ Weaver to your JVM so that it can watch for the annotations.
-	1. Go to Eclipse *Preferences*
-	2. Go to *Java*
-	3. Go to *Installed JREs*
+	1. Go to Eclipse's `Preferences`
+	2. Expand the `Java` section
+	3. Click `Installed JREs`
 	4. Click on the version of Java 8 that you are using
-	5. Click *Edit*
+	5. Click `Edit`
 	6. Add `-javaagent:allure-tools/aspectjweaver-1.8.3.jar` to your Default JVM arguments
+	7. Click `Finish`
+	8. Click `Apply`
 
 ---
 
 ### Run The Demo Example
 - From command line: `$ mvn clean test`
-- From Eclipse: Right click on the test .java file > Run As > TestNG Test
-
+- From Eclipse: 
+	1. Navigate to the test file `ExampleTest.java`
+	2. Right click on the file 
+	3. Click `Run As`
+	4. Click `TestNG Test`
+	
 ---
 
 ### Library References
