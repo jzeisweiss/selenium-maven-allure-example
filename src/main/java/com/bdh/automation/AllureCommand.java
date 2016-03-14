@@ -37,7 +37,7 @@ public enum AllureCommand {
 	/**
 	 * Remove an existing Allure report.
 	 */
-	REMOVE_OLD_REPORT("report clean ");
+	REMOVE_OLD_REPORT("report clean");
 
 	private final String command;
 	private static final String CONSOLE_HORIZONTAL_LINE = "----------------------------------------------------------------------------------";
@@ -54,7 +54,6 @@ public enum AllureCommand {
 	 * 
 	 * @param command
 	 *            to run.
-	 * @throws IOException
 	 */
 	public void executeCommand(final String commandLine) {
 		System.out.println(CONSOLE_HORIZONTAL_LINE);
