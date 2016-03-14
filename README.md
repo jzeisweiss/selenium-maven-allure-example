@@ -1,4 +1,6 @@
-# selenium-maven-allure-example
+# selenium-maven-allure-example 
+[![ReviewNinja](https://app.review.ninja/53761193/badge)](https://app.review.ninja/jzeisweiss/selenium-maven-allure-example)
+[![Build Status](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example.svg?branch=develop)](https://travis-ci.org/jzeisweiss/selenium-maven-allure-example)
 
 ### Table of Contents  
 1. [Report Preview](#report-preview)  
