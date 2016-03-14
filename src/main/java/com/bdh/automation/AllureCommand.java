@@ -39,11 +39,11 @@ public enum AllureCommand {
 	 */
 	REMOVE_OLD_REPORT("report clean");
 
-	private final String command;
 	private static final String CONSOLE_HORIZONTAL_LINE = "----------------------------------------------------------------------------------";
+	private static final String REPORT_DATA_PATH = "target/allure-results";
+	private final String command;
 	private final String ALLURE_HOME = SystemUtils.USER_DIR + "/allure-tools/1.4.22";
 	private final String TOOL_PATH = ALLURE_HOME + "/bin/allure" + (SystemUtils.IS_OS_WINDOWS ? ".bat" : "");
-	private static final String REPORT_DATA_PATH = "target/allure-results";
 
 	AllureCommand(String command) {
 		this.command = CommandLine.parse(TOOL_PATH).getExecutable() + " " + command + " ";
@@ -55,7 +55,7 @@ public enum AllureCommand {
 	 * @param command
 	 *            to run.
 	 */
-	public void executeCommand(final String commandLine) {
+	private void executeCommand(final String commandLine) {
 		System.out.println(CONSOLE_HORIZONTAL_LINE);
 		System.out.println("Running Command: $ " + commandLine);
 		ExecutorService service = Executors.newSingleThreadExecutor();
