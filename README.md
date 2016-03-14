@@ -1,6 +1,6 @@
 # selenium-maven-allure-example
 
-## Table of Contents  
+### Table of Contents  
 1. [Report Preview](#report-preview)  
 2. [Code Samples](#code-samples)  
 3. [System Requirements](#system-requirements)  
