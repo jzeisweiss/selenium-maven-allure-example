@@ -6,6 +6,22 @@
 ### Allure Report Detail View Screenshot
 ![Allure Report Detail](allure-tools/allure_report_details.png?raw=true "Allure Report Detail")
 
+### Code Samples
+```java
+@Features("Jimmy's feature")
+public class ExampleTest {
+	@Stories("Jimmy's Full Examples")
+	@Test(description = "Combine all examples.")
+	public void testFullExample() {
+		CoreWebDiver driver = new CoreWebDiver();
+		driver.addStep("Produce amazing things")
+		      .recordScreenshot("During Test example.")
+		      .recordDataFile("During test data file", "{ More Data }");
+	}
+}
+```
+[Full code sample.](src/test/java/com/bdh/automation/ExampleTest.java)
+
 ### System Requirements
 1. Java 8 
 	*This could technically be down graded to Java 7 but would require some adjustments*
