@@ -5,27 +5,26 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.ashot.AShot;
 
 /**
- * A enhanced {@link FirefoxDriver} that includes methods for Allure.
+ * A enhanced {@link ChromeDriver} that includes methods for Allure.
  * 
  * @author Jimmy Zeisweiss
  *
  */
-public class CoreWebDiver extends FirefoxDriver {
-
+public class CoreWebDiver extends ChromeDriver {
 	/**
 	 * The current step count to print with each step message.
 	 */
 	private int stepCount;
 
 	/**
-	 * A enhanced {@link FirefoxDriver} that includes methods for Allure.
+	 * A enhanced {@link ChromeDriver} that includes methods for Allure.
 	 */
 	public CoreWebDiver() {
 		super();

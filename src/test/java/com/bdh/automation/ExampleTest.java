@@ -24,8 +24,9 @@ public class ExampleTest {
 	 */
 	@BeforeSuite
 	public void beforeSuite() {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
 		driver = new CoreWebDiver();
-		AllureCommand.REMOVE_OLD_REPORT.run();
+        AllureCommand.REMOVE_OLD_REPORT.run();
 	}
 
 	/**

@@ -20,3 +20,4 @@ hs_err_pid*
 
 #TestNG Stuff
 /test-output/
+*.iml
