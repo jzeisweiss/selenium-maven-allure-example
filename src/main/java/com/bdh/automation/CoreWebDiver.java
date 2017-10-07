@@ -7,6 +7,10 @@ import javax.imageio.ImageIO;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.ashot.AShot;
@@ -26,9 +30,9 @@ public class CoreWebDiver extends ChromeDriver {
 	/**
 	 * A enhanced {@link ChromeDriver} that includes methods for Allure.
 	 */
-	public CoreWebDiver() {
+	public CoreWebDiver(String baseUrl) {
 		super();
-		this.get("http://www.google.com");
+		this.get(baseUrl);
 	}
 
 	/**
