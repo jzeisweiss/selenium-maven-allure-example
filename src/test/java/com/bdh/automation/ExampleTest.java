@@ -17,7 +17,8 @@ import ru.yandex.qatools.allure.annotations.Stories;
 @Features("Jimmy's feature")
 public class ExampleTest {
 
-	private CoreWebDiver driver;
+    private static final String BASE_URL = "https://www.google.com";
+    private CoreWebDiver driver;
 
 	/**
 	 * Start the driver and clean old Allure reports.
@@ -25,7 +26,7 @@ public class ExampleTest {
 	@BeforeSuite
 	public void beforeSuite() {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-		driver = new CoreWebDiver();
+		driver = new CoreWebDiver(BASE_URL);
         AllureCommand.REMOVE_OLD_REPORT.run();
 	}
 
